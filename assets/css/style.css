@@ -1,0 +1,55 @@
+body{
+  font-style: sans-serif,Arial;
+  color: white;
+}
+
+header{
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 150px;
+  width: 600px;
+}
+
+h1{
+  font-size: 40px;
+  font-style: bold;
+}
+
+.containerGame{
+  border: 2px solid white;
+  width: 60%;
+  align-content: center;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.underscore{
+  font-size: 80px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 150px;
+  width: 60%;
+}
+
+.rightGuess{
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 150px;
+  width: 60%;
+
+}
+
+.wrongGuess{
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 150px;
+  width: 60%;
+
+}
