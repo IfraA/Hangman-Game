@@ -22,20 +22,41 @@ h1{
   width: 60%;
   align-content: center;
   margin: 0 auto;
-  height: 500px;
+  height: 1000px;
 }
 
-.underscore{
-  font-size: 80px;
+#wordToGuess{
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 150px;
+  width: 60%;
+}
+
+
+#wrongGuesses{
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 150px;
+  width: 60%;
+
+}
+
+#numGuesses{
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
   height: 150px;
   width: 60%;
+
 }
 
-.rightGuess{
-  font-size: 20px;
+#winCounter{
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
@@ -44,8 +65,8 @@ h1{
 
 }
 
-.wrongGuess{
-  font-size: 20px;
+#lossCounter{
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
@@ -53,3 +74,5 @@ h1{
   width: 60%;
 
 }
+
+

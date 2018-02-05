@@ -10,12 +10,17 @@
 		<header>
 			<h1>Hangman Game</h1>
 			<br></br>
-			<h2>Press key to get started</h2>
+			<h2>Guess Your Classmate's Name</h2>
 		</header>
 	<div class="containerGame">	
-		<div class="underscore">_ _ _ _</div>
-		<div class="rightGuess"> Right Guess</div>
-		<div class="wrongGuess"> Wrong Guess</div>
+		<div class="container-body">Word to Guess: <span id="wordToGuess"></span></div>
+		<hr></hr>
+		<div class="container-body">_ _ _ _ _ <span id="wordToGuess"></span></div>
+		<hr></hr>
+		<div class="container-body"> Wrong Guesses:<span id="wrongGuesses"></span></div>
+		<div class="container-body"> Guesses Left:<span id="numGuesses"></span></div>
+		<div class="container-body"> Number of Wins:<span id="winCounter">0</span></div>
+		<div class="container-body"> Games Lost:<span id="lossCounter">0</span></div>
 	</div>
 
 	<script src="assets/javascript/game.js"></script>
