@@ -10,14 +10,14 @@ var alphabets = ['a','b','c',
 				  'v','w','x',
 				  'y','z'];
 //List all words in an array
-var wordBank =["mazda","bmw","mercedes","fiat","honda","toyota","volkswagen","chrysler"];
+var wordBank =["mazda","bmw","mercedes","fiat","honda","toyota","volkswagen","chrysler","suzuki","porsche","bugatti","tesla"];
 //User guess
 var choosenWord = "";
 //alphabets in a word
-var lettersInWord = [];
+var alphabetsInWord = [];
 //number of underscores
 var underscoresNum = 0;
-//Holds Blanks and successful guesses
+//Holds Blanks and successful guesses-empty for now
 var blanksAndSuccesses =[];
 //Wrong guesses-empty array for now
 var wrongLetters = [];
@@ -33,9 +33,9 @@ function reset()
 	//Choose word randomly from the wordBank
 	choosenWord = wordBank[Math.floor(Math.random() * wordBank.length)];
 	//Splits the choosen word into individual letters
-	lettersInWord = choosenWord.split('');
+	alphabetsInWord = choosenWord.split('');
 	//Get the number of blanks
-	underscoresNum = lettersInWord.length;
+	underscoresNum = alphabetsInWord.length;
 	
 	//reset
 	letterGuessed = 0;
@@ -44,24 +44,24 @@ function reset()
 	wrongLetters =[];
 	blanksAndSuccesses =[];
 	alphabets = ['a','b','c',
-					  'd','e','f',
-					  'g','h','i',
-					  'j','k','l',
-					  'm','n','o',
-					  'p','q','r',
-					  's','t','u',
-					  'v','w','x',
-					  'y','z'];
+				  'd','e','f',
+				  'g','h','i',
+				  'j','k','l',
+				  'm','n','o',
+				  'p','q','r',
+				  's','t','u',
+				  'v','w','x',
+				  'y','z'];
 	test=false;
 	startGame();
 }
-//to start..similar steps as reset
+//to start..similar steps as reset. This function will be called out after every reset
 function startGame()
 {
-	//same the reset function
+	//this step will be same as reset function
 	choosenWord = wordBank[Math.floor(Math.random() * wordBank.length)];
-	lettersInWord = choosenWord.split('');
-	underscoresNum = lettersInWord.length;
+	alphabetsInWord = choosenWord.split('');
+	underscoresNum = alphabetsInWord.length;
 	
 	//reset
 	rightGuessCounter = 0;
@@ -94,7 +94,7 @@ function startGame()
 }
 //create function to put the correct guessed alphabet in the right blank
 function compareLetters(userKey) {
-				console.log('WORKING!');
+				// console.log('WORKING!');
 				//create conditions for correct guess
 				if(choosenWord.indexOf(userKey) > -1)
 				{
@@ -102,14 +102,14 @@ function compareLetters(userKey) {
 					for(var i = 0; i < underscoresNum; i++)
 					{
 						//Fills in right index with user key
-						if(lettersInWord[i] === userKey)
+						if(alphabetsInWord[i] === userKey)
 						{
 							rightGuessCounter++; blanksAndSuccesses[i] = userKey;
 							document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses.join(' ');
 						}	
 					}
 					//check
-					console.log(blanksAndSuccesses);
+					// console.log(blanksAndSuccesses);
 				}
 				//condition for wrong guess
 				else
@@ -155,7 +155,7 @@ function winLose()
 //-------------------
 // to start the game press any key
 //reset all variables to 0
-//** had difficulty figuring this out so most is online reference like splics function
+//** had difficulty figuring this out so most is online reference.
 
 startGame();
 

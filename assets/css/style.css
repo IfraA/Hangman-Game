@@ -1,5 +1,5 @@
 body{
-  font-style: sans-serif,Arial;
+  font-family: sans-serif,Arial;
   color: white;
 }
 
@@ -14,14 +14,16 @@ header{
 }
 
 h1{
-  font-size: 40px;
+  font-size: 50px;
   font-style: bold;
+   
 }
  .title-image{
 
   margin-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-bottom: 30px;
+  
  }
 .containerGame{
   border: 3px dotted white;
@@ -34,7 +36,7 @@ h1{
 
 .container-body{
   font-size: 20px;
-  font-style: sans-serif, Helvetica, Arial;
+  font-style: bold;
   margin-left: 30px;
   margin-top: 20px;
   margin-right: 20px;
@@ -42,6 +44,10 @@ h1{
 }
 #wordToGuess{
   font-size: 50px;
+}
+
+.car-image{
+  margin-left: 170px;
 }
 
 /*#wordToGuess{
