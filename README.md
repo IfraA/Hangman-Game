@@ -1,4 +1,4 @@
-Hangman Game- This was a challenging assisgnment which required lots of research and learning new methods. Existing codes and online resources came in handy.
+Hangman Game- This was a challenging assignment which required lots of research and learning new methods. Existing codes and online resources came in handy.
 
 Steps:
 User presses a key to start.
