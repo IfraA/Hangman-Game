@@ -10,25 +10,44 @@ header{
   margin-top: 30px;
   height: 150px;
   width: 600px;
+
 }
 
 h1{
   font-size: 40px;
   font-style: bold;
 }
+ .title-image{
 
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+ }
 .containerGame{
-  border: 2px solid white;
+  border: 3px dotted white;
   width: 60%;
-  align-content: center;
-  margin: 0 auto;
-  height: 1000px;
+  margin-left: 400px;
+  height: 800px;
+  margin-top: 50px;
+  width: 60%;
 }
 
+.container-body{
+  font-size: 20px;
+  font-style: sans-serif, Helvetica, Arial;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+
+}
 #wordToGuess{
+  font-size: 50px;
+}
+
+/*#wordToGuess{
   font-size: 60px;
-  text-align: center;
-  margin: 0 auto;
+ 
+  margin-left: 30px;
   margin-top: 50px;
   height: 150px;
   width: 60%;
@@ -36,19 +55,14 @@ h1{
 
 
 #wrongGuesses{
-  font-size: 30px;
-  text-align: center;
-  margin: 0 auto;
+  font-size: 50px;
+  margin-left: 50px;
   margin-top: 20px;
-  height: 150px;
-  width: 60%;
 
 }
 
 #numGuesses{
   font-size: 30px;
-  text-align: center;
-  margin: 0 auto;
   margin-top: 30px;
   height: 150px;
   width: 60%;
@@ -74,5 +88,7 @@ h1{
   width: 60%;
 
 }
+*/
+
 
 

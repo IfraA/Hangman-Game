@@ -86,7 +86,7 @@ function startGame()
 	}
 
 	//create innerHtml function for the appropriate ids displayed on the page
-	document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses;
+	document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses.join(' ');
 	document.getElementById('numGuesses').innerHTML = guessesLeft;
 	document.getElementById('winCounter').innerHTML = winCount;
 	document.getElementById('lossCounter').innerHTML = loseCount;
@@ -155,6 +155,7 @@ function winLose()
 //-------------------
 // to start the game press any key
 //reset all variables to 0
+//** had difficulty figuring this out so most is online reference like splics function
 
 startGame();
 
@@ -169,7 +170,7 @@ document.onkeyup = function(event)
 		{
 			var spliceDword = alphabets.splice(i,1);
 			//Test / Debug
-			console.log('Double word is = ' + alphabets[i])
+			console.log('alphabet is = ' + alphabets[i])
 			console.log('Spliced Word is = ' + spliceDword);
 
 			compareLetters(letterGuessed);
